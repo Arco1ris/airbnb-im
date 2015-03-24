@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <title>Airbnb | Rainbow</title>
+    <meta charset="utf-8">
+     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+     <script src="./bt&jq/jquery-2.1.3.min.js"></script>
+     <script src="./bt&jq/bootstrap.min.js"></script>
+     <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+     <script>
+  $(function() {
+    $( "#from" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      onClose: function( selectedDate ) {
+        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $( "#to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      onClose: function( selectedDate ) {
+        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
+  });
+  </script>
+<!--
+     <script src="./start.js"></script>
+     <script src="./starttop.js"></script>
+-->
+    <link type="text/css" rel="stylesheet" href="./bt&jq/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.min.css">
+    <link type="text/css" rel="stylesheet" href="airbnb.css">
+<!--    <link type="text/css" rel="stylesheet" href="start.css">-->
+
+ <script type="text/javascript">
+    $(document).ready(function(){
+        $("#panel").hide();
+    $(".btn-slide").click(function(){
+    $("#panel").slideDown("middle");
+    });
+      $("#button").click(function(){
+            $("#panel").slideUp("middle");
+        });
+//需要再加一个当鼠标距离顶端距离大于页面距离，则自动上拉
+    });
+    </script>
+</head>
+<body>
+  <!--panel-->
+   <div style="display: block;" id="panel">
+    <button  id="button" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="container">
+        <div class="row">
+            <div class="first">
+                <img src="pictures-model/how_it_works-05170c93f9abdde98ec4b0c9b6836a3a.png">
+                <div class="first-ct">
+                    <h3>Discover Amazing Places</h3>
+                    <p>Find hosts with extra rooms,entire homes<br/>and unique accommodation like castles<br/>and igloos.</p>
+                </div>
+            </div>
+            <div class="second">
+                <img src="pictures-model/how_it_works-05170c93f9abdde98ec4b0c9b6836a3a%20copy.png">
+                <div class="second-ct">
+                    <h3>Book a Stay</h3>
+                    <p>Connect with hosts,confirm travel dates,<br/>and pay--all through Airbnb's trusted<br/>services.</p>
+                </div>
+            </div>
+            <div class="third">
+                <img src="pictures-model/how_it_works-05170c93f9abdde98ec4b0c9b6836a3a%20copy%202.png">
+                <div class="third-ct">
+                    <h3>Travel</h3>
+                    <p>Feel at home,anywhere you go in the<br/>world. <a href="#">Learn more</a> about howto travel on<br/>Airbnb.</p>
+                </div>
+            </div>
+            </div>
+        <div class="footer">
+                <p><a>Learn more </a>about hosting on Airbnb and show your guests they're right where they belong.</p>
+            </div>
+    </div>
+    
+     </div>
+    <div id="container"> 
+    <!--header menu  =====================================================-->
+    <div class="header">    
+ <nav class="navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="./airbnb/airbnb.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="del"><a href="#">Sign Up</a></li>
+        <li class="del"><a href="#">Log In</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+           <li class="dif"><a href="#">Visit the Help Center &raquo;</a></li>
+            <li><a href="#">Getting Started Guide</a></li>
+            <li><a href="#">Can I make changes to a confirmed reservation?</a></li>
+            <li><a href="#">How much do I pay for a reservation?</a></li>
+            <li><a href="#">How does the Airbnb payment system work?</a></li>
+             <li><a href="#">What is Verified ID?</a></li>
+              <li><a href="#">See all FAQs</a></li>
+          </ul>
+        </li>
+        <li class="piece1"><a href="#"> List Your Space</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>  
+          
+          
+           <video autoplay loop style="width:100%" >
+         <source src="Seoul-P1-4.mp4" type="video/mp4"> 
+  <source src="//a0.muscache.com/airbnb/static/Seoul-P1-4.webm" type="video/webm"> 
+      </video>
+         
+         <div class="homepage">
+             <h1>WELCOME HOME</h1>
+             <p>Rent unique places to stay from local hosts in 190+ countries</p>
+            <div>
+
+<!--     panel button-->
+      <p class="slide"><a href="javascript:;" class="btn-slide"><button  type="button" class="btn btn-primary"> How It Works</button></a></p>
+            
+ </div>
+        </div>
+ <div class="search">
+           <div class="container">
+             <div class="row">
+
+             <div class="col-md-3"><div class="searching"><label class="sr-only" for="inputHelpBlock">Input with help text</label> <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" placeholder="Where do you want to go?"></div></div>
+              
+            <div class="col-md-2">
+             <div class="datatime">
+            <label for="from"></label>
+            <input type="text" id="from" name="from" placeholder="Check In">
+                </div></div>
+            <div class="col-md-2">
+            <div class="datatime">
+            <label for="to"></label>
+            <input type="text" id="to" name="to" placeholder="Check Out">
+                </div></div>
+              
+              <div class="col-md-1">
+                <select class="form-control" id="select">
+                  <option>1 Guest</option>
+                  <option>2 Guest</option>
+                  <option>3 Guest</option>
+                  <option>4 Guest</option>
+                  <option>5 Guest</option>
+                </select>
+                  
+              </div>
+              <div class="col-md-1"><div class="submit"><input class="btn btn-default" type="submit" value="Search"></div></div>
+            </div>
+           </div>
+             </div>
+        </div>
+        
+<!--content===============================-->
+<div class="content">
+  <div class="container">
+      <div class="con-head">
+          <h2>Explore the World</h2>
+          <p>See where poeple are traveling,all around the world</p>
+      </div>
+  </div>
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-8 "><div class="pic1"></div></div>
+           <div class="col-lg-4 "><div class="pic2"></div></div>
+           <div class="col-lg-4"><div class="pic3"></div></div>
+           <div class="col-lg-4"><div class="pic4"></div></div>
+           <div class="col-lg-4"><div class="pic5"></div></div>
+           <div class="col-lg-4"><div class="pic6"></div></div>
+           <div class="col-lg-8"><div class="pic7"></div></div>
+           <div class="col-lg-4"><div class="pic8"></div></div>
+           <div class="col-lg-4"><div class="pic9"></div></div>
+           <div class="col-lg-4"><div class="pic10"></div></div>
+       </div>
+   </div>
+    </div><!--content-->
+   <div class="footer">
+        
+         </div>
+    </div>
+           <a  style="display:none" href="javascript:;" class="btntop" title="top" id="btntop"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>TOP</a>
+
+</body>
+</html>

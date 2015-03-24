@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <title>Gihub | Rainbow</title>
+    <meta charset="utf-8">
+     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+     <script src="./bt&jq/jquery-2.1.3.min.js"></script>
+     <script src="./bt&jq/bootstrap.min.js"></script>
+     <link type="text/css" rel="stylesheet" href="./bt&jq/bootstrap.min.css">
+   <script type="text/javascript">
+    $(document).ready(function(){
+    $("#panel").hide();
+    $(".btn-slide").click(function(){
+    $("#panel").slideDown("slow");
+//    $(this).toggleClass("active"); return false;
+    });
+      $("#button").click(function(){
+            $("#panel").slideUp("slow");
+        });
+    });
+    </script>
+    <style type="text/css">
+    #panel { 
+        background: #69C7F7; 
+        height: 300px; 
+        width: 100%;
+        display: none; }
+     </style>
+    </head>
+    <body>
+<!--
+    <div style="display: block;" id="panel">
+    <button  id="button" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+     </div>
+      <p class="slide"><a href="javascript:;" class="btn-slide">点击试试</a></p>
+-->
+
+   
+   <div style="display: block;" id="panel">
+    <button  id="button" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+     </div>
+<!--     panel button-->
+      <p class="slide"><a href="javascript:;" class="btn-slide"><button  type="button" class="btn btn-primary" > How It Works</button></a></p>
+            
+    
+    </body>
+</html>
