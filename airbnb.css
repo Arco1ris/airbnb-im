@@ -1,7 +1,7 @@
     .header{
         position: relative;
     }
-    video{
+   .first-video    video{
          margin-top: -175px;
          position:relative;
          z-index:-99999999;
@@ -92,7 +92,7 @@
         font-family:inherit;
     }
     
-  .btn.btn-primary {
+.homepage  .slide .btn.btn-primary {
         
       width: 13%;
       height: 43px;
@@ -104,10 +104,10 @@
       background-color: rgba(255,255,255,0.5);
       border: none;
     }
-     .btn.btn-primary:hover{
+   .homepage .slide .btn.btn-primary:hover{
           background-color: rgba(0,0,0,0.5);
      }
-.btn.btn-primary{
+.homepage .slide .btn.btn-primary{
         font-size: 16px;
     }
 /*    END HOMEPAGE*/
@@ -117,7 +117,7 @@
        background-color: rgba(0,0,0,0.6);
        position: relative;
 /*       border: 1px solid white;*/
-       padding-top: 27px;
+       padding-top: 30px;
        padding-bottom: 27px;
        margin-top: -18px;
        position: relative;
@@ -160,12 +160,11 @@
         height: 44px !important;
         background-color:#fff;
         border-radius: 0 !important;
-  
-     font-size: 16px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     border-style: none; 
-    
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-style: none; 
+     
     }
 
 /*日历*/
@@ -246,7 +245,7 @@ button:hover
    #panel .container{
        padding-top: 32px;
        height: 630px;
-       border: 1px solid black;
+/*       border: 1px solid black;*/
        width: 100%;
    }
    #panel .container .row{
@@ -304,16 +303,17 @@ button:hover
     }
 /*    END panel*/
 /*    CONTENT*/
+
     .content .container{
-        border: 1px solid black;
-        margin-top:20px;
+/*       border: 1px solid black;*/
+        margin-top:10px;
         text-align: center;
         text-rendering: optimizelegibility;
         color: #565A5C;
         font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
     }
     .content .container .con-head{
-        padding-top: 5px;
+        padding-top: 15px;
         line-height: 1.43;
     }
      .content .container .con-head h2{
@@ -322,59 +322,282 @@ button:hover
      }
 /*    图片 */
     .content .container .row{
-      margin-left: -125px;
-      margin-top: -26px !important;
+      margin-top:26px !important;
     }
-    .content .container .row .col-lg-8 {
-        border: 1px solid black;
-        position: relative;
-        display: inline-block;
-        height: 344px;
-        width: 655px;
-/*
-        margin-left: 15px;
-        margin-right: 25px;
-*/
-/*        background: url('airbnb/content-pic/paris.jpeg') no-repeat center center;*/
-    }
+.content .container .row{
+/*    border: 1px solid black;*/
+    padding-left: 70px;
     
-    .content .container .row .col-lg-4 {
-/*        border: 1px solid black;*/
-        position: relative;
-        align-items: center;
-         display: block;
-         height: 344px;
-         width: 340px;
-/*
-        margin-left: 15px;
-        margin-right: 10px;
-*/
-        
     }
-
+ .content .container .row .col-lg-8{
+/*     border: 1px solid red;*/
+     height: 369px;
+     width: 680px;
+ }
+.content .container .row .col-lg-4{
+/*    border: 1px solid green;*/
+    width: 340px;
+    height: 369px;
+   
+}
 .content .container .row .col-lg-8 .pic1,.pic7{
-         border: 1px solid black;
-        position: relative;
-        align-items: center;
-        height: 344px;
-        width: 655px;
-        padding-right: -40px !important;
+/*    border: 1px solid blueviolet;*/
+    height: 344px;
+     width: 655px; 
+
+   
+}
+
+.content .container .row .col-lg-4 .pic2,.pic3,.pic4,.pic5,.pic6,.pic8,.pic9,.pic10{
+/*    border: 1px solid blueviolet;*/
+    height: 344px;
+     width: 314px; 
+}
+.content .container .row .col-lg-8 .pic1 a,.pic7 a{
+    height: 344px;
+    width: 655px; 
+    display: block;/*使超链接覆盖整个块*/
+    text-decoration: none;
     
+}
+
+.content .container .row .col-lg-4 .pic2 a,.pic3 a,.pic4 a,.pic5 a,.pic6 a,.pic8 a,.pic9 a,.pic10 a{
+     height: 344px;
+     width: 314px; 
+     display: block;
+    text-decoration: none;
+}
+/*此处冗余太多，后续可想办法修改*/
+.content .container .row .col-lg-4 .pic2 p,
+.content .container .row .col-lg-4 .pic3 p,
+.content .container .row .col-lg-4 .pic4 p,
+.content .container .row .col-lg-4 .pic5 p,
+.content .container .row .col-lg-4 .pic6 p,
+.content .container .row .col-lg-4 .pic8 p,
+.content .container .row .col-lg-4 .pic9 p,
+.content .container .row .col-lg-4 .pic10 p
+{
+    
+    padding-top: 45%;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
     }
-    .content .container .row .col-lg-4 .pic2,.pic3,.pic4,.pic5,.pic6,.pic8,.pic9,.pic10{
-/*        border: 1px solid black;*/
-        width: 314px;
-        height: 344px;
-    }
+.content .container .row .col-lg-8 .pic1 p,.pic7 p{
+    padding-top: 22%;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
 /*    分别设置背景图*/
-    .content .container .row .col-md-8 .pic1{background: url('airbnb/content-pic/paris.jpeg') no-repeat center center;}
-    .content .container .row .col-md-4 .pic2{ background: url('airbnb/content-pic/d1cb58a7_original.jpg') no-repeat center center;}
-     .content .container .row .col-md-4 .pic3{background: url('airbnb/content-pic/Seoul.jpeg') no-repeat center center;}
-     .content .container .row .col-md-4 .pic4{background: url('airbnb/content-pic/Osaka.jpeg') no-repeat center center;}
-     .content .container .row .col-md-4 .pic5{background: url('airbnb/content-pic/Newyork.jpg') no-repeat center center;}
-     .content .container .row .col-md-4 .pic6{ background: url('airbnb/content-pic/44186a19_original.jpg') no-repeat center center;}
-     .content .container .row .col-md-8 .pic7{ background: url('airbnb/content-pic/Sanf.jpeg') no-repeat center center;}
-     .content .container .row .col-md-4 .pic8{ background: url('airbnb/content-pic/London.jpeg') no-repeat center center;}
-     .content .container .row .col-md-4 .pic9{ background: url('airbnb/content-pic/LogA.jpeg') no-repeat center center;}
-     .content .container .row .col-md-4 .pic10{ background: url('airbnb/content-pic/shopping_2x1.jpg') no-repeat center center;}
+    .content .container .row .col-lg-8 .pic1{
+        background-color: transparent;
+    }
+/*上面的设置只是为了保证所有图片都显示，不知为何，否则第一张图无法显示*/
+
+/*第一张图片被迫放这里，不然无法显示啊，暂时还不知道原因，暂且这样放着吧。。*/
+.content .container .row .col-lg-8 .pic1{background-image: url(airbnb/content-pic/paris.jpeg); background-size: cover;}
+    .content .container .row .col-lg-4 .pic2{ background: url('airbnb/content-pic/d1cb58a7_original.jpg') no-repeat center center;background-size: cover;}
+     .content .container .row .col-lg-4 .pic3{background: url('airbnb/content-pic/Seoul.jpeg') no-repeat center center;background-size: cover;}
+     .content .container .row .col-lg-4 .pic4{background: url('airbnb/content-pic/Osaka.jpeg') no-repeat center center;background-size: cover;}
+     .content .container .row .col-lg-4 .pic5{background: url('airbnb/content-pic/Newyork.jpg') no-repeat center center;background-size: cover;}
+     .content .container .row .col-lg-4 .pic6{ background: url('airbnb/content-pic/44186a19_original.jpg') no-repeat center center;background-size: cover;}
+     .content .container .row .col-lg-8 .pic7{ background: url('airbnb/content-pic/Sanf.jpeg') no-repeat center center;background-size: cover;}
+     .content .container .row .col-lg-4 .pic8{ background: url('airbnb/content-pic/London.jpeg') no-repeat center center;background-size: cover;}
+     .content .container .row .col-lg-4 .pic9{ background: url('airbnb/content-pic/LogA.jpeg') no-repeat center center;background-size: cover;}
+     .content .container .row .col-lg-4 .pic10{ background: url('airbnb/content-pic/shopping_2x1.jpg') no-repeat center center;background-size: cover;}
+/*    CONTENT-2*/
+/* Carousel base class */
+.content2{
+    margin-top: 90px;
+}
+.carousel {
+  height: 600px;
+  margin-bottom: 60px;
+
+
+}
+/* Since positioning the image, we need to help out the caption */
+.content .carousel-caption {
+/*  z-index: 10;*/
+/*  border: 2px solid black;*/
     
+}
+
+/* Declare heights because of positioning of img element */
+.content2 .carousel .item {
+  height: 600px;
+  background-color: #FFB400;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+}
+
+/*去掉本身自带的两侧阴影,左右侧箭头*/
+ .carousel-control.left, .carousel-control.right {
+    background-image: none;
+/*    border: 2px solid red;*/
+    height: 40px;
+    width: 40px;
+    margin-top: 280px;
+   font-weight: 100;
+}
+
+.content2 .container .carousel-caption  p{
+    display: block;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+.content2 .container .carousel-caption   h3{
+    display: block;
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    
+}
+/*播放按钮*/
+.content2 .container .carousel-caption .glyphicon.glyphicon-play-circle{
+    font-size: 90px;
+    color: rgba(255,255,255,0.1);
+    margin-bottom: 18%;
+    padding-top: 28px;
+/*    border: 2px solid red;*/
+    z-index: 99;
+
+}
+.content2 .container {
+/*    border: 2px solid red;*/
+    height: 600px; 
+    width: 100%;
+
+}
+
+.content2 .container .carousel-caption .upto{
+/*    border: 2px solid black;*/
+    display: block;
+    width: 1284px;
+    margin-left: -258px;
+    overflow-x: hidden;
+    margin-bottom: 40px;
+}
+
+.content2 .container .carousel-caption  #img1{
+/*    border: 2px solid red;*/
+    display: block;
+    position: relative;    
+}
+.content2 .container .carousel-caption  #img2{
+/*    border: 2px solid blue;*/
+    display: block;
+    float: left;
+    margin-top: 30px;
+    margin-left:300px;
+
+    }
+.content2 .container .carousel-caption .h_2 {
+/*    border: 1px solid green;*/
+    margin-top: 18px;
+    text-align: left;
+    float: right;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    margin-right: 230px;
+    
+}
+.content2 .container .carousel-caption .h_2 .h2{
+/*    border: 2px solid black;*/
+/*    display: flex;*/
+/*     line-height: 1.43;*/
+      text-shadow: none;
+/*      letter-spacing: 1px;*/
+       margin:0px -25px 0px 0px ;
+   width: 530px;
+    height: 35px;
+}
+.content2 .container .carousel-caption .h_2 .h2.trans{
+   opacity: 0.7;
+}
+
+
+#third-item{
+   margin-top: -50px;
+    margin-bottom: 50px;
+}
+ .container  #carousel-caption1{
+/*    border: 2px solid red;*/
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: 99;
+    height: 602px;
+          }
+.container  #carousel-caption2{
+/*    border: 2px solid red;*/
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: 90;
+    height: 622px;
+    margin-bottom: -22px;
+    width: 100% !important;
+    overflow: hidden;
+}
+.container  #carousel-caption1 img3{
+    position: absolute;
+    z-index: 20;
+
+}
+.container  #carousel-caption1 img4{
+    position: absolute;
+    z-index: 21;
+    width: 500px;
+
+}
+/*配图文字*/
+.carousel-caption  #carousel-content1{
+/*              border: 2px solid blue;*/
+              position: absolute;
+/*                z-index: 999;*/
+             height: 280px;
+             margin-top: 15%;
+             margin-left: 22%;
+          }
+.carousel-caption  #carousel-content2{
+            position: absolute;
+             height: 280px;
+             margin-top: 20%;
+             margin-left: 22%;
+}
+
+#button1{
+    width: 40px;
+    height: 60px;
+/*    border: 2px solid red;*/
+    float: right !important;
+    font-size: 50px;
+    font-weight: 100;
+    position: absolute;
+    z-index: 100;
+    margin-left: 1100px;
+    margin-top: 50px;
+}
+#button2{
+     width: 40px;
+    height: 60px;
+/*    border: 2px solid red;*/
+    float: right !important;
+    font-size: 50px;
+    font-weight: 100;
+    position: absolute;
+    z-index: 100;
+    margin-left: 1100px;
+    margin-top: 100px;
+}
