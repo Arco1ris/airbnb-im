@@ -603,3 +603,177 @@ button:hover
     margin-left: 1100px;
     margin-top: 50px;
 }
+/*==========================CONTENT3================================*/
+.content3{
+    position: absolute;
+    height: 492px;
+    width: 100%;
+}
+/*总*/
+.content3 .card{
+    height: 492px;
+    width: 25%;
+/*    border: 2px solid black;*/
+    float: left;
+/*    padding-left: 15px;*/
+    position: relative;  
+      transition: opacity 0.8s ease, top 800ms ease;
+  transition-property: opacity, top;
+  transition-duration: 0.8s, 800ms;
+  transition-timing-function: ease, ease;
+}
+/*分*/
+.content3 .card .card-img{
+    position: absolute;
+/*    border: 3px solid green;*/
+    height: 492px;
+    width: 100%;
+
+}
+.content3 .card .card-body{
+/*    border: 2px solid yellow;*/
+    height: 100%;
+    width: 100%;
+    position:relative;
+}
+/*END 分*/
+.content3 .card-img #card1{
+/*    border: 2px solid red;*/
+    height: 100%;
+    position: relative;
+    width: 96%;
+    background-image: url("second-end/ols-df529f5834fc47471ac0ae828583e250.jpg");
+    margin-left: 7px;
+}
+
+.content3 .card-img #card2{
+/*    border: 2px solid red;*/
+    height: 100%;
+    position: relative;
+    width: 96%;
+    background-image: url("second-end/traveling-73ba2942dae0a033a2b14388527214c4.jpg");
+    margin-left: 7px;
+}
+.content3 .card-img #card3{
+/*    border: 2px solid red;*/
+    height: 100%;
+    position: relative;
+    width: 96%;
+    background-image: url("second-end/ols-map-2114142d78be39e4c3f42b3b579867f5.jpg");
+    margin-left: 7px;
+}
+.content3 .card-img #card4{
+/*    border: 2px solid red;*/
+    height: 100%;
+    position: relative;
+    width: 96%;
+    background-image: url("second-end/hosting-8fec1d4e5d1dde4d267f6480654346f2.jpg");
+    margin-left: 7px;
+}
+/*文本框*/
+#card-body1,#card-body2,#card-body3,#card-body4{
+/*    border: 2px solid green;*/
+    height: 100%;
+    position: relative;
+    width: 96%;
+    margin-left: 7px;
+}
+/*第二，四底部*/
+.card .card-body .card-text{
+    color:white;
+    text-align: center;
+/*    border: 2px solid white;*/
+    padding: 30px 40px 30px 40px;
+    bottom: 0;/*让模块位于最低端，配合absolute*/
+    position: absolute;
+    width: 100%
+}
+/*未知原因,暂且把第三个模块与第二，四模块分开*/
+.card .card-body .card-text3{
+    color:white;
+    text-align: center;
+/*    border: 2px solid white;*/
+    padding: 40px 40px 58px 40px;
+    bottom: 0;/*让模块位于最低端，配合absolute*/
+    position: absolute;
+    width: 100%
+}
+/*第一个底部模块，为了增加颜色与其它三个分开来写*/
+.card .card-body .card-text1{
+    color:white;
+    text-align: center;
+/*    border: 2px solid white;*/
+    padding: 30px 40px 30px 40px;
+    bottom: 0;/*让模块位于最低端，配合absolute*/
+    position: absolute;
+    background-color: #ffaa91;
+    width: 100%;
+
+}
+/*第二和第四个模块头部*/
+.card .card-body .card-head1{
+/*    border: 2px solid white;*/
+    margin:0 auto;/*左右居中*/
+    color: white;
+    text-align: center;   
+    height: 42px;
+    padding-left: 28%;
+    padding-right: 28%;
+    font-size: 14px;
+}
+/*第二个头部*/
+.card .card-body .card-head1 .header2{
+/*   border: 1px solid red;*/
+   height: 100%;
+   padding-top: 8%;
+    background-color: #007a87;
+    letter-spacing: 0.5px;
+}
+/*第四个头部*/
+.card .card-body .card-head1 .header4{
+/*   border: 1px solid red;*/
+   height: 100%;
+   padding-top: 8%;
+    background-color: #7b0051;
+    letter-spacing: 0.5px;
+}
+/*第三个头部*/
+.card .card-body .card-head2{
+    margin-top: 25px;
+/*    border: 2px solid white;*/
+    color: white;
+    text-align: center;   
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+/*调节第一块字体*/
+.card .card-body  .card-text1 p{
+    font-weight: 200;
+    letter-spacing: 0.7px;
+     font-size: 13px;
+      line-height: 1.43;
+
+}
+.card .card-body  .card-text1 h3{
+    letter-spacing: 0.7px;
+}
+/*调节二，三，四块字体*/
+.card .card-body  .card-text h3{
+    font-size: 32px;
+    letter-spacing: 0.8px;
+}
+.card .card-body  .card-text p{
+    font-weight: 200;
+    letter-spacing: 0.7px;
+     font-size: 13px;
+    line-height: 1.43;
+    margin: 0;
+}
+.card .card-body  .card-text3 p{
+    font-weight: 200;
+    letter-spacing: 0.7px;
+     font-size: 13px;
+    line-height: 1.43;
+    margin: 0;
+}
